@@ -4,6 +4,6 @@ El juego tiene un contador de puntos, el cual dira la cantidad de manzanas (bola
 Este proyecto es interesante debido a que revive la nostalgia y la magia de este clásico juego. 
 Personalmente es un desafío retador e insipardor para aprender más sobre programación.
 
-
+*El algoritmo inicial del juego está en los archivos del repositorio
 
 
