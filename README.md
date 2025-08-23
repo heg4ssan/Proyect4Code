@@ -6,28 +6,4 @@ Personalmente es un desafío retador e insipardor para aprender más sobre progr
 
 
 
-Algoritmo:
 
-Inicio
-mover arriba = teclear_W
-	Si teclear_W = mover arriba
-                SI NO teclear_W = mantener 
- mover abajo = teclear_S
-	Si teclear_S = mover abajo 
-                SI NO teclear_S = mantener 
-   mover derecha = teclear_D
-	Si teclear_D = mover derecha
-                SI NO teclear_D = mantener 
-     mover izquierda = teclear_A
-	Si teclear_A = mover izquierda 
-                SI NO teclear_A= mantener 
-    Fin Si
-        ganar_bolita = crecer
-           SI = “ganar bolita” = crecer
-		SI NO = “ganar bolita” =  mantener_tamaño 
-    Fin Si 
-          vivir = (“ganar bolitas y no chocar”)
-	SI = “ganar bolitas y no chocar” = vivir 
-		SI NO = “ganar bolitas y no chocar” = morir
-    Fin Si 
-Fin 
