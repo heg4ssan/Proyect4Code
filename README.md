@@ -7,4 +7,5 @@ Personalmente es un desafío retador e insipardor para aprender más sobre progr
 *El algoritmo inicial del juego está en los archivos del repositorio
 
 Avance 2: Se integran operadores aritmeticos y listas para representar en codigo el algoritmo inicial de movimeinto.
+
 Avance 3: Se agregan los otros dos algoritmos iniciales y se definen funciones para los operadores aritmeticos.
