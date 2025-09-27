@@ -9,3 +9,5 @@ Personalmente es un desafío retador e insipardor para aprender más sobre progr
 Avance 2: Se integran operadores aritmeticos y listas para representar en codigo el algoritmo inicial de movimeinto.
 
 Avance 3: Se agregan los otros dos algoritmos iniciales y se definen funciones para los operadores aritmeticos.
+
+Avance 5: Organizo mis algoritmos en funciones, agregue dos funciones para colisiones en eje x y y, y agregue ciclos while en las funciones para diferentes propositos.
