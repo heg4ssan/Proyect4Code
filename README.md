@@ -11,3 +11,5 @@ Avance 2: Se integran operadores aritmeticos y listas para representar en codigo
 Avance 3: Se agregan los otros dos algoritmos iniciales y se definen funciones para los operadores aritmeticos.
 
 Avance 5: Organizo mis algoritmos en funciones, agregue dos funciones para colisiones en eje x y y, y agregue ciclos while en las funciones para diferentes propositos.
+
+Avance 6: Creó dos funciones usando ciclos for y listasa, una para crear el tablero y otra para dibujarla, ademas de un par de cambios generales.
