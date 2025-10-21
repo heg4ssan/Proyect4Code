@@ -1,6 +1,6 @@
 # EaterGame
 
-El videojuego "EaterGame" está ligeramente inspirado en el clásico juego SNAKE de nokia. El objetivo del usuario es conseguir el mayor puntaje posible con un máximo de 25 movimientos en el tablero. Esto en un tablero de 15 x 15, donde el usuario es representado como una bola, y los puntos, están representados por bolas vacías. Para "Ganar" en este juego debes conseguir 7 o más puntos, si el usuario logra el anterior puntaje, será venerado y felicitado por el programa. Las instrucciones son simples, los movimientos se realizan con w, a, s y d representando las flechas, después seguir los puntos y conseguir los más posibles.
+El videojuego "EaterGame" está ligeramente inspirado en el clásico juego SNAKE de nokia. El objetivo del usuario es conseguir el mayor puntaje posible con un máximo de 25 movimientos en el tablero. Esto en un tablero de 15 x 15, donde el usuario es representado como una bola, y los puntos (comida), están representados por bolas vacías. Para "Ganar" en este juego debes conseguir 7 o más puntos, si el usuario logra el anterior puntaje, será venerado y felicitado por el programa. Las instrucciones son simples, los movimientos se realizan con w, a, s y d representando las flechas, después seguir los puntos y conseguir los más posibles.
 
 ### Algoritmo
 
