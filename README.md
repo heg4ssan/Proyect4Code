@@ -14,3 +14,4 @@ En el código, usé solo la biblioteca random. Random es una biblioteca estánda
 
 Para jugarlo, descarga el archivo y córrelo en la terminal, o abre algún IDE y presiona el botón de play.
 
+Gracias por jugar :)
