@@ -13,6 +13,9 @@ import random
 LIM_POSITIVO = 14
 LIM_NEGATIVO = 0
 LIM_MOVIMIENTOS = 25
+ANCHO = 15
+ALTO = 15
+
 
 """
     diccionario que le asigna a un numero(llave), a diferentes formas
@@ -23,10 +26,6 @@ FORMAS = {
     1: "o",       
     2: "●",       
     }
-
-
-ANCHO = 15
-ALTO = 15
 
 
 #========================= funciones principales =======================
