@@ -170,6 +170,7 @@ tablero = crear_grid(ANCHO, ALTO)
 #=========================== funcion main =============================
 
 
+
 def main():
     """
     funcion que primero, imprime el tablero con condiciones iniciales,
