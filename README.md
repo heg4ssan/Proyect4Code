@@ -6,26 +6,29 @@ El videojuego "EaterGame" está ligeramente inspirado en el clásico juego SNAKE
 
 El programa funciona a base de un ciclo principal, donde se dibuja el tablero usando una matriz, se lee el movimiento del usuario, con ese dato calcula su nueva posición, revisa si en esa posición se salió del tablero (colisión), revisa si el usuario no superó el número de movimientos, revisa si la posición del usuario coincide con la de la comida, si es así, agrega un punto a la puntuación y cambia la comida de posición por una random, y por último, actualiza el tablero con las nuevas posiciones y puntuación.\
 
-Para más detalle, en pseudocódigo se vería así:\
 
-imprimir tablero con posiciones iniciales\
-mientras gameover sea falso:\
-  leer dirección\
-  actualizar posicion del usuario\
-  si eje x o eje y pasaron el límite:\
-    game over = True\
-  si el usuario superó el numero de movimientos:\
-    game over = True\
-  si game over aún == False:\
-    si la serpiente está en la misma posición que la comida:\
-      puntos = puntos + 1\
-      borrar anterior posición de comida\
-      crear nueva posición random\ 
-    actualizar posiciones del usuario y comida en el tablero\ 
-    dibujar tablero con posiciones nuevas\
-    imprimir puntuacion\
-    solo si el usuario se movió:\
-      movimientos = movimientos + 1\
+```
+Para más detalle, en pseudocódigo se vería así:
+
+imprimir tablero con posiciones iniciales
+mientras gameover sea falso:
+  leer dirección
+  actualizar posicion del usuario
+  si eje x o eje y pasaron el límite:
+    game over = True
+  si el usuario superó el numero de movimientos:
+    game over = True
+  si game over aún == False:
+    si la serpiente está en la misma posición que la comida:
+      puntos = puntos + 1
+      borrar anterior posición de comida
+      crear nueva posición random 
+    actualizar posiciones del usuario y comida en el tablero 
+    dibujar tablero con posiciones nuevas
+    imprimir puntuacion
+    solo si el usuario se movió:
+      movimientos = movimientos + 1
+```
   
 
 ### Bibliotecas
