@@ -4,7 +4,7 @@ El videojuego "EaterGame" está ligeramente inspirado en el clásico juego SNAKE
 
 ### Algoritmo
 
-El programa funciona a base de un ciclo principal, donde se dibuja el tablero usando una matriz, se lee el movimiento del usuario, con ese dato calcula su nueva posición, revisa si en esa posición se salió del tablero (colisión), revisa si el usuario no superó el número de movimientos, revisa si la posición del usuario coincide con la de la comida, si es así, agrega un punto a la puntuación y cambia la comida de posición por una random, y por último, actualiza el tablero con las nuevas posiciones y puntuación.\
+El programa funciona a base de un ciclo principal, donde se dibuja el tablero usando una matriz, se lee el movimiento del usuario, con ese dato calcula su nueva posición, revisa si en esa posición se salió del tablero (colisión), revisa si el usuario no superó el número de movimientos, revisa si la posición del usuario coincide con la de la comida, si es así, agrega un punto a la puntuación y cambia la comida de posición por una random, y por último, actualiza el tablero con las nuevas posiciones y puntuación.
 
 
 ```
@@ -19,7 +19,7 @@ mientras gameover sea falso:
   si el usuario superó el numero de movimientos:
     game over = True
   si game over aún == False:
-    si la serpiente está en la misma posición que la comida:
+    si el usuario está en la misma posición que la comida:
       puntos = puntos + 1
       borrar anterior posición de comida
       crear nueva posición random 
