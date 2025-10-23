@@ -170,13 +170,12 @@ tablero = crear_grid(ANCHO, ALTO)
 #=========================== funcion main =============================
 
 
-
 def main():
     """
     funcion que primero, imprime el tablero con condiciones iniciales,
     con el ciclo principal del juego, primero borra la anterior posicion,
     lee el movimiento del teclado, revisa si el usuario colisiono, si lo
-    hizo, el ciclo acaba con gameover == True, despues revisa cuantos
+    hizo, el ciclo acaba con gameover == True, si no, revisa cuantos
     movimientos le quedan al usuario, si pasa el limite, el ciclo acaba,
     seguido, revisa si la posicion de la comida coincide con la del usuario,
     si es asi, suma un punto al contador, borra la posicion de la comida y
@@ -206,25 +205,26 @@ def main():
         
         if colision_eje_x(usuario[0]) or colision_eje_y(usuario[1]):
             gameover = True
-            break
-        if movimientos_realizados > LIM_MOVIMIENTOS:
+            
+        elif movimientos_realizados > LIM_MOVIMIENTOS:
             gameover = True
-            break
+
+        if not gameover:    
         
-        if comidacheck(usuario, comida_pos):
-            puntuacion += 1
-            tablero[comida_pos[0]][comida_pos[1]] = 0
-            comida_pos = comida()
+            if comidacheck(usuario, comida_pos):
+                puntuacion += 1
+                tablero[comida_pos[0]][comida_pos[1]] = 0
+                comida_pos = comida()
         
-        tablero[usuario[0]][usuario[1]] = 2
-        tablero[comida_pos[0]][comida_pos[1]] = 1
+            tablero[usuario[0]][usuario[1]] = 2
+            tablero[comida_pos[0]][comida_pos[1]] = 1
         
-        dibujar_grid(tablero)
+            dibujar_grid(tablero)
         
-        print("Puntos:", puntuacion,)
+            print("Puntos:", puntuacion,)
         
-        if direccion != [0, 0]:
-            movimientos_realizados += 1
+            if direccion != [0, 0]:
+                movimientos_realizados += 1
     
     print("Tu puntuaje fue de", puntuacion)
     if puntuacion < 5:
