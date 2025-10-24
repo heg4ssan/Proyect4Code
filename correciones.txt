@@ -1,0 +1,51 @@
+Sub-Competencia:
+Plantea una situación problema que le permite aplicar y demostrar sus conocimientos de programación (avance 1)
+Error : No especificar manera de implementar ciclos en algoritmo (for/while)
+Nota: El algoritmo tuvo una reestructuracion completa para poder representar de mejor manera el juego real.
+Algoritmo Inicial:
+Inicio
+mover arriba = teclear_W
+	Si teclear_W = mover arriba
+                SI NO teclear_W = mantener 
+ mover abajo = teclear_S
+	Si teclear_S = mover abajo 
+                SI NO teclear_S = mantener 
+   mover derecha = teclear_D
+	Si teclear_D = mover derecha
+                SI NO teclear_D = mantener 
+     mover izquierda = teclear_A
+	Si teclear_A = mover izquierda 
+                SI NO teclear_A= mantener 
+    Fin Si
+        ganar_bolita = crecer
+           SI = “ganar bolita” = crecer
+		SI NO = “ganar bolita” =  mantener_tamaño 
+    Fin Si 
+          vivir = (“ganar bolitas y no chocar”)
+	SI = “ganar bolitas y no chocar” = vivir 
+		SI NO = “ganar bolitas y no chocar” = morir
+    Fin Si 
+Fin 
+
+
+Algoritmo reestructurado:
+EO, tablero
+imprimir tablero con posiciones iniciales
+mientras gameover sea falso:            -----------> Implementacion de ciclo
+  leer dirección
+  actualizar posicion del usuario
+  si eje x o eje y pasaron el límite:
+    game over = True
+  si el usuario superó el numero de movimientos:
+    game over = True
+  si game over aún == False:
+    si el usuario está en la misma posición que la comida:
+      puntos = puntos + 1
+      borrar anterior posición de comida
+      crear nueva posición random 
+    actualizar posiciones del usuario y comida en el tablero 
+    dibujar tablero con posiciones nuevas
+    imprimir puntuacion
+    solo si el usuario se movió:
+      movimientos = movimientos + 1
+EF, puntuacion
