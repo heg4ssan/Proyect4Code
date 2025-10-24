@@ -31,7 +31,6 @@ FORMAS = {
 #========================= funciones principales =======================
 
 
-
 def movimientos(usuario):
     """
     (uso de condiciones, funciones)
@@ -166,26 +165,20 @@ Con Ancho y Alto."""
 tablero = crear_grid(ANCHO, ALTO)
 
 
-
-#=========================== funcion main =============================
-
+#=========================== funcion del juego ==========================
 
 
-def main():
+def partida(tablero):
     """
-    funcion que primero, imprime el tablero con condiciones iniciales,
-    con el ciclo principal del juego, primero borra la anterior posicion,
-    lee el movimiento del teclado, revisa si el usuario colisiono, si lo
-    hizo, el ciclo acaba con gameover == True, si no, revisa cuantos
-    movimientos le quedan al usuario, si pasa el limite, el ciclo acaba,
-    seguido, revisa si la posicion de la comida coincide con la del usuario,
-    si es asi, suma un punto al contador, borra la posicion de la comida y
-    crea una nueva random, seguido, con los nuevos datos de la posicion del
-    usuaio y la de comida, actualiza el tablero con nuevas posiciones,
-    asignando la nueva posicion a un numero y con el diccionario de FORMAS,
-    cambiando esa llave por su valor(forma), el contador de movimientos
-    solo cambia si el usuario se mueve, por ultimo, unos ifs revisan
-    cuantos puntos consiguio el usuario y imprime un mensaje dependiendo eso.
+    recibe: tablero 
+    Esta función inicializa las variables del juego como la
+    posicion del jugador, la comida, y maneja el bucle de juego.
+    En cada turno, lee el movimiento del usuario, actualiza las
+    posiciones, detecta colisiones (comida y bordes) y revisa el
+    limite de movimientos.
+    El juego termina cuando se cumple una la condicion de 'gameover'.
+    El algoritmo del juego se basa en esta funcion (readme)
+    devuelve: puntuacion final
     """
     usuario = [5, 5]
     comida_pos = [6, 7]
@@ -227,6 +220,36 @@ def main():
             if direccion != [0, 0]:
                 movimientos_realizados += 1
     
+    return puntuacion
+
+
+#=========================== funcion main =============================
+
+
+def main():
+    """
+    funcion que imprime mensaje inicial, crea el tablero, y ese 
+    tablero se usa para correr el juego principal, una ves terminado
+    el juego, la puntuacion se guarda y dependiendo de ella, sale
+    un mensaje
+    """
+    print("Bienvenido viajero!")
+    print("Lo que estas viendo es el tablero, y esa bola negra eres tu!")
+    print("Ves esa bola vacia?, es tu objetivo.")
+    print("Tienes que conseguir las que mas puedas.")
+    print("Pero ojo! solo tienes 25 movimientos, asi que usalos de manera "
+        "inteligente.")
+    print("Cuidado con salirte del tablero, moriras!")
+    print("Si consigues 7 o mas, tienes el respeto de los "
+        "dioses del olimpo.")
+    print("Vamos, intentalo! te mueves con w, a, s, d.")
+    print("Buena suerte viajero.")
+
+    tablero = crear_grid(ANCHO, ALTO)
+
+    puntuacion = partida(tablero)
+            
+
     print("Tu puntuaje fue de", puntuacion)
     if puntuacion < 5:
         print("Nada mal, nada mal...")
@@ -235,17 +258,5 @@ def main():
     elif puntuacion >= 7:
         print("Los dioses del olimpo te admiran, lo que lograste fue "
             "una en un millon.")
-        
-            
 
-print("Bienvenido viajero!")
-print("Lo que estas viendo es el tablero, y esa bola negra eres tu!")
-print("Ves esa bola vacia?, es tu objetivo.")
-print("Tienes que conseguir las que mas puedas.")
-print("Pero ojo! solo tienes 25 movimientos, asi que usalos de manera "
-     "inteligente.")
-print("Cuidado con salirte del tablero, moriras!")
-print("Si consigues 7 o mas, tienes el respeto de los dioses del olimpo.")
-print("Vamos, intentalo! te mueves con w, a, s, d.")
-print("Buena suerte viajero.")
 main()
