@@ -159,12 +159,6 @@ def dibujar_grid(tablero):
         print()
         
 
-
-"""Asigno a la variable tablero un grid creado por crear_grid
-Con Ancho y Alto."""
-tablero = crear_grid(ANCHO, ALTO)
-
-
 #=========================== funcion del juego ==========================
 
 
