@@ -10,6 +10,7 @@ El programa funciona a base de un ciclo principal, donde se dibuja el tablero us
 ```
 Para más detalle, en pseudocódigo se vería así:
 
+EO, tablero
 imprimir tablero con posiciones iniciales
 mientras gameover sea falso:
   leer dirección
@@ -28,15 +29,21 @@ mientras gameover sea falso:
     imprimir puntuacion
     solo si el usuario se movió:
       movimientos = movimientos + 1
+EF, puntuacion
 ```
   
 
 ### Bibliotecas
 
-En el código, usé solo la biblioteca random. Random es una biblioteca estándar de Python, eso quiere decir que ya viene incluida por defecto en el lenguaje y no es necesario instalar nada para usarla, esta biblioteca se usa para generar números pseudoaleatorios, se les llama así porque aunque a nuestros ojos se ven aleatorios, en realidad son generados por un algoritmo matemático. Para este juego, esa aleatoriedad es más que suficiente. En mi código la integro de la siguiente manera, random ofrece muchas funciones, pero la que fue útil para este programa fue: random.randint(a,b), esta función devuelve un número aleatorio que está entre los valores a y b, en este caso, lo usé para generar la posición de la comida. Que la comida tenga posiciones random bastante interesante, ya que vuelven al juego prácticamente de suerte, y lo hace mucho más retador y complicado. Hasta día de hoy, nadie ha conseguido más de 7 puntos debido a esta función.
+En el código, usé solo la biblioteca `random`.
+Random es una biblioteca estándar de Python, eso quiere decir que ya viene incluida por defecto en el lenguaje y no es necesario instalar nada para usarla, esta biblioteca se usa para generar números pseudoaleatorios, se les llama así porque aunque a nuestros ojos se ven aleatorios, en realidad son generados por un algoritmo matemático. Para este juego, esa aleatoriedad es más que suficiente. En mi código la integro de la siguiente manera, random ofrece muchas funciones, pero la que fue útil para este programa fue: `random.randint(a,b)`, esta función devuelve un número aleatorio que está entre los valores a y b, en este caso, lo usé para generar la posición de la comida. Que la comida tenga posiciones random bastante interesante, ya que vuelven al juego prácticamente de suerte, y lo hace mucho más retador y complicado. Hasta día de hoy, nadie ha conseguido más de 7 puntos debido a esta función.
 
 ### Instrucciones
 
-Para jugarlo, descarga el archivo y córrelo en la terminal, o abre algún IDE y presiona el botón de play.
+Para jugarlo, descarga el archivo y córrelo en la terminal, 
+```
+python3 eatergame.py
+```
+o abre algún IDE y presiona el botón de play.
 
 Gracias por jugar :)
