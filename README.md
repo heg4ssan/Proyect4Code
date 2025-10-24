@@ -42,7 +42,7 @@ Random es una biblioteca estándar de Python, eso quiere decir que ya viene incl
 
 Para jugarlo, descarga el archivo y córrelo en la terminal, 
 ```
-python3 eatergame.py
+python3 EaterGame.py
 ```
 o abre algún IDE y presiona el botón de play.
 
